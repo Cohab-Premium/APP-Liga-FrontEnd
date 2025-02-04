@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import { FC } from 'react';
+import Image from 'next/image'
+import { FC } from 'react'
 
 interface LogoProps {
+
     src: string;
     alt: string;
     width?: number;
@@ -15,17 +16,18 @@ interface LogoProps {
 }
 
 const Logo: FC<LogoProps> = ({
-    src,
-    alt,
-    width = 400,
-    height = 300,
-    priority = false,
-    className = '',
-    objectFit = 'cover',
-    quality = 75,
-    onLoad,
-    onError,
+  src,
+  alt,
+  width = 400,
+  height = 300,
+  priority = false,
+  className = '',
+  objectFit = 'cover',
+  quality = 75,
+  onLoad,
+  onError,
 }) => {
+
     return (
         <div className={`relative ${className}`}>
             <Image
@@ -45,4 +47,5 @@ const Logo: FC<LogoProps> = ({
     );
 };
 
-export default Logo;
+
+export default Logo
